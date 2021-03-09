@@ -11,5 +11,12 @@ def add(s):
 			raise TypeError('bad delimiter formatting')
 	else:
 		s = s.replace('\n', ',')
+	
+	nums = [int(x) for x in s.split(delimiter)]
 
-	return sum([int(x) for x in s.split(delimiter)])
+	if min(nums) < 0:
+		negatives = [x for x in nums if x < 0]
+		neg_str = ', '.join(negatives)
+		raise TypeError('negatives not allowed: ' + neg_str)
+
+	return sum(nums)
