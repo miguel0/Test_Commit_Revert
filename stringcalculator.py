@@ -1,2 +1,2 @@
-def Add(a):
+def add(s):
   return 0
