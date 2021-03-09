@@ -1,2 +1,4 @@
 def add(s):
-	return 0
+	if not s:
+		return 0
+	return 1
