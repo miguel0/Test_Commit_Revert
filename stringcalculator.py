@@ -8,7 +8,8 @@ def add(s):
 			delimiter = s[0]
 			s = s[2:]
 		else:
-			raise TypeError('bad delimiter formatting')
+			if s[0] != '-':
+				raise TypeError('bad delimiter formatting')
 	else:
 		s = s.replace('\n', ',')
 	
