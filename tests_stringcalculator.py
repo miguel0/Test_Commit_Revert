@@ -22,6 +22,8 @@ class TestStringMethods(unittest.TestCase):
 	def test_dif_separators_args(self):
 		self.assertEqual(stringcalculator.add("3,7\n10,20"), 40)
 		self.assertEqual(stringcalculator.add("100\n20\n1000"), 1120)
+		with self.assertRaises(ValueError):
+			stringcalculator.add("100\n,20,\n1000")
 
 
 if __name__ == '__main__':
