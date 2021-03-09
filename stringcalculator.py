@@ -2,7 +2,7 @@ def add(s):
 	if not s:
 		return 0
 	
-	if len(s) < 2:
+	if ',' not in s:
 		return int(s)
 
 	return -1
