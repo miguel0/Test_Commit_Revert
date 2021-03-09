@@ -17,7 +17,7 @@ def add(s):
 
 	if min(nums) < 0:
 		negatives = [x for x in nums if x < 0]
-		neg_str = ', '.join(negatives)
+		neg_str = ', '.join(map(str, negatives))
 		raise TypeError('negatives not allowed: ' + neg_str)
 
 	return sum(nums)
