@@ -33,6 +33,7 @@ class TestStringMethods(unittest.TestCase):
 			stringcalculator.add("a\n100a20aa1000")
 		with self.assertRaises(TypeError):
 			stringcalculator.add("a100,20,1000")
+		with self.assertRaises(IndexError):
 			stringcalculator.add("a")
 
 
