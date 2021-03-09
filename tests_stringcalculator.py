@@ -11,7 +11,7 @@ class TestStringMethods(unittest.TestCase):
 		self.assertEqual(stringcalculator.add("3"), 3)
 	
 	def test_two_args(self):
-		self.assertEqual(stringcalculator.add("3"), 3)
+		self.assertEqual(stringcalculator.add("3,7"), 10)
 
 
 if __name__ == '__main__':
