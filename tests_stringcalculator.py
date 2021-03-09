@@ -30,6 +30,7 @@ class TestStringMethods(unittest.TestCase):
 		self.assertEqual(stringcalculator.add("-\n100-20-1000"), 1120)
 		with self.assertRaises(ValueError):
 			stringcalculator.add("a\n100,20,1000")
+			stringcalculator.add("a\n100a20aa1000")
 
 
 if __name__ == '__main__':
