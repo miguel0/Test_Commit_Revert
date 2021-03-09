@@ -34,7 +34,7 @@ class TestStringMethods(unittest.TestCase):
 		with self.assertRaises(TypeError):
 			stringcalculator.add("a100,20,1000")
 		with self.assertRaises(IndexError):
-			stringcalculator.add("aa")
+			stringcalculator.add("a")
 
 
 if __name__ == '__main__':
