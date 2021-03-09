@@ -38,7 +38,7 @@ class TestStringMethods(unittest.TestCase):
 	
 	def test_negative_args(self):
 		with self.assertRaises(IndexError):
-			stringcalculator.add("a\n-1a34")
+			stringcalculator.add("a\n-19a34")
 		with self.assertRaises(TypeError):
 			stringcalculator.add("-100,20,-1000,9,-6")
 			stringcalculator.add("-1")
